@@ -1,0 +1,50 @@
+#main-swiper .swiper {
+    width: 100vw;
+    height: 100vh;
+}
+@media(min-width:991px) {
+    #main-swiper .swiper {
+        height: 800px;
+    }
+}
+
+
+#main-swiper .swiper-slide{
+    color: rgb(235, 143, 143);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-swiper .swiper-slide p{
+    display: flex;
+    align-items: center;
+}
+#main-swiper .s-1{
+    background-color: red;
+}
+#main-swiper .s-2{
+    background-color: blue;
+}
+#main-swiper .s-3{
+    background-color: yellow;
+}
+
+#main-swiper .s-1 p::before{
+    content: "\F194";
+    font-family: bootstrap-icons;
+}
+#main-swiper .s-2 p::before{
+    content: "\F685";
+    font-family: bootstrap-icons;
+}
+#main-swiper .s-3 p::before{
+    content: "\F217";
+    font-family: bootstrap-icons;
+}
+
+@media(max-width:1000px){
+    #main-swiper .swiper-slide p{
+        font-size: 5vw;
+    }
+}
